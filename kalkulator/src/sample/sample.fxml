@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.23869346733668342" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="467.0" prefWidth="1063.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="135.0" prefWidth="751.0" styleClass="calculateArea">
+         <children>
+            <TextField fx:id="argumentsTextField" layoutX="455.0" layoutY="13.0" prefHeight="82.0" prefWidth="488.0" />
+            <Text fx:id="latestResultLabel" layoutX="182.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="calculateArea" text="Ostatni wynik" wrappingWidth="114.501953125">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <VBox layoutX="955.0" layoutY="3.0" prefHeight="108.0" prefWidth="92.0">
+               <children>
+                  <RadioButton fx:id="hexRadioBtn" mnemonicParsing="false" onAction="#changeOnHexAction" prefHeight="36.0" prefWidth="125.0" text="HEX">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="decRadioBtn" mnemonicParsing="false" onAction="#changeOnDecAction" prefHeight="36.0" prefWidth="122.0" text="DEC">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="binRadioBtn" mnemonicParsing="false" onAction="#changeOnBinAction" prefHeight="29.0" prefWidth="124.0" text="BIN">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </VBox>
+            <Label fx:id="latestResultTextLabel" layoutX="18.0" layoutY="34.0" prefHeight="47.0" prefWidth="327.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="currentOperationLabel" layoutX="381.0" layoutY="42.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="751.0">
+         <children>
+            <GridPane layoutX="366.0" layoutY="55.0" prefHeight="295.0" prefWidth="388.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="125.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="125.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="416.0" minWidth="10.0" prefWidth="122.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="twoBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="102.0" prefWidth="130.0" styleClass="numberBtn" text="2" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="threeBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="99.0" prefWidth="124.0" styleClass="numberBtn" text="3" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fourBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="98.0" prefWidth="131.0" styleClass="numberBtn" text="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fiveBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="100.0" prefWidth="130.0" styleClass="numberBtn" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sixBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="98.0" prefWidth="124.0" styleClass="numberBtn" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sevenBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="100.0" prefWidth="131.0" styleClass="numberBtn" text="7" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="eightBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="98.0" prefWidth="134.0" styleClass="numberBtn" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="nineBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="99.0" prefWidth="124.0" styleClass="numberBtn" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="oneBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="101.0" prefWidth="131.0" styleClass="numberBtn" text="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <HBox layoutX="366.0" layoutY="1.0" prefHeight="36.0" prefWidth="694.0">
+               <children>
+                  <Button fx:id="signChangeBtn" mnemonicParsing="false" onMouseClicked="#signChangeMouseClicked" prefHeight="52.0" prefWidth="190.0" styleClass="operatorBtn" text="+/-">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zeroBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="38.0" prefWidth="195.0" styleClass="numberBtn" text="0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bckspcBtn" mnemonicParsing="false" onMouseClicked="#removeMouseClicked" prefHeight="54.0" prefWidth="157.0" styleClass="eraseBtn">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/bckspc.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="resetBtn" mnemonicParsing="false" onMouseClicked="#resetMouseClicked" prefHeight="54.0" prefWidth="153.0" styleClass="eraseBtn" text="RESET">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <GridPane layoutX="1.0" layoutY="-1.0" prefHeight="351.0" prefWidth="365.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="addBtn" mnemonicParsing="false" onMouseClicked="#addMouseClicked" prefHeight="113.0" prefWidth="122.0" styleClass="operatorBtn" text="+" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="subBtn" mnemonicParsing="false" onMouseClicked="#substractionMouseClicked" prefHeight="116.0" prefWidth="121.0" styleClass="operatorBtn" text="-" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="multiplBtn" mnemonicParsing="false" onMouseClicked="#multMouseClicked" prefHeight="120.0" prefWidth="122.0" styleClass="operatorBtn" text="*" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="divisionBtn" mnemonicParsing="false" onMouseClicked="#divMouseClicked" prefHeight="118.0" prefWidth="121.0" styleClass="operatorBtn" text="/" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="moduloBtn" mnemonicParsing="false" onMouseClicked="#moduloMouseClicked" prefHeight="127.0" prefWidth="122.0" styleClass="operatorBtn" text="\%" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="factoryBtn" mnemonicParsing="false" onMouseClicked="#factoryMouseClicked" prefHeight="156.0" prefWidth="121.0" styleClass="operatorBtn" text="!" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="newtonBtn" mnemonicParsing="false" onMouseClicked="#newtonMouseClicked" prefHeight="116.0" prefWidth="122.0" styleClass="operatorBtn" text="() Newton" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="expBtn" mnemonicParsing="false" onMouseClicked="#powerMouseClicked" prefHeight="118.0" prefWidth="122.0" styleClass="operatorBtn" text="x^y" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="calcBtn" mnemonicParsing="false" onMouseClicked="#calcMouseClicked" prefHeight="115.0" prefWidth="122.0" styleClass="operatorBtn" text="=">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <GridPane layoutX="751.0" layoutY="56.0" prefHeight="295.0" prefWidth="310.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="ABtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="109.0" prefWidth="155.0" styleClass="numberBtn" text="A">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="100.0" prefWidth="155.0" styleClass="numberBtn" text="B" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="152.0" prefWidth="155.0" styleClass="numberBtn" text="C" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="DBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="139.0" prefWidth="155.0" styleClass="numberBtn" text="D" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="EBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="156.0" prefWidth="155.0" styleClass="numberBtn" text="E" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="FBtn" mnemonicParsing="false" onMouseClicked="#numberMouseClicked" prefHeight="147.0" prefWidth="155.0" styleClass="numberBtn" text="F" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

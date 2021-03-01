@@ -1,0 +1,59 @@
+.numberBtn{
+	-fx-background-color:blue;
+	-fx-text-fill:white;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.numberBtn:hover{
+	-fx-background-color:white;
+	-fx-text-fill:blue;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.operatorBtn{
+	-fx-background-color: #18bfc4;
+	-fx-text-fill:white;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.operatorBtn:hover{
+	-fx-background-color: white;
+	-fx-text-fill:#18bfc4;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.eraseBtn{
+	-fx-background-color: #6919e0;
+	-fx-text-fill:black;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.eraseBtn:hover{
+	-fx-background-color: white;
+	-fx-text-fill:#6919e0;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+}
+
+.calculateArea{
+	-fx-background-color: #8391de;
+	-fx-font-family: "Times New Roman", Times, serif;
+	-fx-font-size: 20px;
+}
